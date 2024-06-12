@@ -13,7 +13,7 @@ pipeline {
         // This can be http or https
         NEXUS_PROTOCOL = "http"
         // Where your Nexus is running
-        NEXUS_URL = "18.222.210.119:8081/"
+        NEXUS_URL = "18.222.210.119:8081"
         // Repository where we will upload the artifact
         NEXUS_REPOSITORY = "Scripted_Pipeline"
         // Jenkins credential id to authenticate to Nexus OSS
@@ -24,7 +24,7 @@ pipeline {
             steps {
                 script {
                     // Let's clone the source
-                    git 'https://github.com/thabassum1219/Declarative_1';
+                    git 'https://github.com/thabassum1219/Declarative_1/master';
                 }
             }
         }
